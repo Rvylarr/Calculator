@@ -25,7 +25,7 @@ class Calcy implements Operaions {
             System.out.println(num1 + "/" + num2 + "=" + div(num1, num2));
             return;
         }
-        System.out.println("Неизвестная операция");
+        System.out.println("РќРµРёР·РІРµСЃС‚РЅР°СЏ РѕРїРµСЂР°С†РёСЏ");
     }
 
     public int add(int num1, int num2) {
@@ -46,11 +46,11 @@ class Calcy implements Operaions {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Введите первое число: ");
+        System.out.print("Р’РІРµРґРёС‚Рµ 1-РѕРµ С‡РёСЃР»Рѕ: ");
         int num1 = sc.nextInt();
-        System.out.print("Введите второе число: ");
+        System.out.print("Р’РІРµРґРёС‚Рµ 2-РѕРµ С‡РёСЃР»Рѕ: ");
         int num2 = sc.nextInt();
-        System.out.println("Выберите действие:" + "\n" + "Сложение +" + "\n" + "Вычитание -" + "\n" + "Умножение *" + "\n" + "Деление /" + "\n");
+        System.out.println("Р’С‹Р±РµСЂРёС‚Рµ РґРµР№СЃС‚РІРёРµ:" + "\n" + "РЎР»РѕР¶РµРЅРёРµ +" + "\n" + "Р’С‹С‡РёС‚Р°РЅРёРµ -" + "\n" + "РЈРјРЅРѕР¶РµРЅРёРµ *" + "\n" + "Р”РµР»РµРЅРёРµ /" + "\n");
         String o = sc.next();
 	Calcy Cal = new Calcy(num1,num2,o);
         sc.close();
